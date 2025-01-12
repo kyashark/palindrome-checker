@@ -12,10 +12,22 @@ body{
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:#0f1425 ;
+    flex-direction: column;
+}
+
+aside{
+    width: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding:20px;
+    margin: 30px;
+    font-style: italic;
+    letter-spacing: 0.2px;
 }
 
 main{
-    width: 60%;
+    width: 50%;
     height: 300px;
     background-color: #ffffff;
     padding: 30px;
@@ -44,7 +56,7 @@ input{
     padding-left: 10px;
 }
 
-p{
+main p{
     margin-top: 20px;
     color: #27376d;
 }
@@ -64,3 +76,30 @@ button{
 button:hover{
     background-color: #141b31;
 }
+
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1280px) {
+    main,
+    aside {
+      width: 60%;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+  
+    main,
+    aside {
+      width: 75%;
+    }
+  }
+  
+  @media only screen and (max-width: 640px) {
+
+    main,
+    aside {
+      width: 85%;
+    }
+  }
