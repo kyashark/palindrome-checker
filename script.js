@@ -3,8 +3,6 @@
  const checkBtn = document.getElementById("check-btn");
  const result = document.getElementById('result');
 
- 
-
 
  const removePunctuation = (str)=>{
     const regex = /[!.@#$%^&*()_+\-=/,.]/g;
@@ -32,7 +30,6 @@
     console.log(originalText);
     const str = clearText(text.value.toLowerCase().trim());
 
-
     console.log(str);
 
     let c = "";
@@ -57,7 +54,6 @@
         }else{
             checkPalindrome();
         }
-
     })
 
  
